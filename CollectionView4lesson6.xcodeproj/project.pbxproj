@@ -13,6 +13,10 @@
 		1DC88C932B8E22D300868C52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC88C912B8E22D300868C52 /* Main.storyboard */; };
 		1DC88C952B8E22D500868C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DC88C942B8E22D500868C52 /* Assets.xcassets */; };
 		1DC88C982B8E22D500868C52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DC88C962B8E22D500868C52 /* LaunchScreen.storyboard */; };
+		1DC88CA02B8E289A00868C52 /* TopCustomCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC88C9F2B8E289A00868C52 /* TopCustomCollViewCell.swift */; };
+		1DC88CA52B90906E00868C52 /* BottomCustomCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC88CA42B90906E00868C52 /* BottomCustomCollViewCell.swift */; };
+		1DC88CA72B90909B00868C52 /* LabelCustomCollViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC88CA62B90909B00868C52 /* LabelCustomCollViewCell.swift */; };
+		1DC88CAA2B90C63A00868C52 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC88CA92B90C63A00868C52 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1DC88C942B8E22D500868C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DC88C972B8E22D500868C52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DC88C992B8E22D500868C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DC88C9F2B8E289A00868C52 /* TopCustomCollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCustomCollViewCell.swift; sourceTree = "<group>"; };
+		1DC88CA42B90906E00868C52 /* BottomCustomCollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCustomCollViewCell.swift; sourceTree = "<group>"; };
+		1DC88CA62B90909B00868C52 /* LabelCustomCollViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCustomCollViewCell.swift; sourceTree = "<group>"; };
+		1DC88CA92B90C63A00868C52 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		1DC88C8A2B8E22D300868C52 /* CollectionView4lesson6 */ = {
 			isa = PBXGroup;
 			children = (
-				1DC88C8B2B8E22D300868C52 /* AppDelegate.swift */,
-				1DC88C8D2B8E22D300868C52 /* SceneDelegate.swift */,
+				1DC88CA12B8FB2E300868C52 /* Delegates */,
 				1DC88C8F2B8E22D300868C52 /* ViewController.swift */,
-				1DC88C912B8E22D300868C52 /* Main.storyboard */,
-				1DC88C942B8E22D500868C52 /* Assets.xcassets */,
-				1DC88C962B8E22D500868C52 /* LaunchScreen.storyboard */,
+				1DC88CA32B8FB31F00868C52 /* CustomCollecViewCells */,
+				1DC88CA82B90C61200868C52 /* Model */,
+				1DC88CA22B8FB2F700868C52 /* Resources */,
 				1DC88C992B8E22D500868C52 /* Info.plist */,
 			);
 			path = CollectionView4lesson6;
+			sourceTree = "<group>";
+		};
+		1DC88CA12B8FB2E300868C52 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1DC88C8B2B8E22D300868C52 /* AppDelegate.swift */,
+				1DC88C8D2B8E22D300868C52 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		1DC88CA22B8FB2F700868C52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DC88C912B8E22D300868C52 /* Main.storyboard */,
+				1DC88C942B8E22D500868C52 /* Assets.xcassets */,
+				1DC88C962B8E22D500868C52 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DC88CA32B8FB31F00868C52 /* CustomCollecViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1DC88C9F2B8E289A00868C52 /* TopCustomCollViewCell.swift */,
+				1DC88CA62B90909B00868C52 /* LabelCustomCollViewCell.swift */,
+				1DC88CA42B90906E00868C52 /* BottomCustomCollViewCell.swift */,
+			);
+			path = CustomCollecViewCells;
+			sourceTree = "<group>";
+		};
+		1DC88CA82B90C61200868C52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DC88CA92B90C63A00868C52 /* Menu.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC88CA52B90906E00868C52 /* BottomCustomCollViewCell.swift in Sources */,
 				1DC88C902B8E22D300868C52 /* ViewController.swift in Sources */,
+				1DC88CAA2B90C63A00868C52 /* Menu.swift in Sources */,
 				1DC88C8C2B8E22D300868C52 /* AppDelegate.swift in Sources */,
+				1DC88CA02B8E289A00868C52 /* TopCustomCollViewCell.swift in Sources */,
+				1DC88CA72B90909B00868C52 /* LabelCustomCollViewCell.swift in Sources */,
 				1DC88C8E2B8E22D300868C52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
